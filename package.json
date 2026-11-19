@@ -1,6 +1,6 @@
 {
   "name": "doc-model-safety-gate",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "The DOC Model Safety Gate as an MCP server: AI agents propose content changes, humans review them, and only reviewed work can publish.",
   "type": "module",
   "main": "dist/index.js",
@@ -32,5 +32,6 @@
     "@types/node": "^26.6.6",
     "typescript": "^5.7.3",
     "vitest": "^4.0.18"
-  }
+  },
+  "mcpName": "io.github.laceykes/doc-model-safety-gate"
 }
