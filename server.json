@@ -1,1 +1,58 @@
-{"$schema":"https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json","description":"AI agents propose content changes; a human reviews them; only reviewed work can publish.","name":"io.github.laceykes/doc-model-safety-gate","packages":[{"environmentVariables":[{"description":"GraphQL endpoint of the Safety Gate API","format":"string","isRequired":true,"isSecret":false,"name":"DOCMODEL_API_ENDPOINT"},{"description":"Bearer token sent to the Safety Gate API","format":"string","isRequired":true,"isSecret":true,"name":"DOCMODEL_API_TOKEN"},{"description":"Identity the server acts as (sent as the x-user-id header)","format":"string","isRequired":true,"isSecret":false,"name":"DOCMODEL_USER_ID"},{"description":"Project the server is scoped to (sent as the x-project-id header)","format":"string","isRequired":false,"isSecret":false,"name":"DOCMODEL_PROJECT_ID"},{"description":"member (default) or admin","format":"string","isRequired":false,"isSecret":false,"name":"DOCMODEL_USER_ROLE"}],"identifier":"doc-model-safety-gate","registryType":"npm","transport":{"type":"stdio"},"version":"0.1.1"}],"repository":{"source":"github","url":"https://github.com/laceykes/doc-model-safety-gate"},"title":"DOC Model Safety Gate","version":"0.1.1"}
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "description": "AI agents propose content changes; a human reviews them; only reviewed work can publish.",
+  "name": "io.github.laceykes/doc-model-safety-gate",
+  "packages": [
+    {
+      "environmentVariables": [
+        {
+          "description": "GraphQL endpoint of the Safety Gate API",
+          "format": "string",
+          "isRequired": true,
+          "isSecret": false,
+          "name": "DOCMODEL_API_ENDPOINT"
+        },
+        {
+          "description": "Bearer token sent to the Safety Gate API",
+          "format": "string",
+          "isRequired": true,
+          "isSecret": true,
+          "name": "DOCMODEL_API_TOKEN"
+        },
+        {
+          "description": "Identity the server acts as (sent as the x-user-id header)",
+          "format": "string",
+          "isRequired": true,
+          "isSecret": false,
+          "name": "DOCMODEL_USER_ID"
+        },
+        {
+          "description": "Project the server is scoped to (sent as the x-project-id header)",
+          "format": "string",
+          "isRequired": false,
+          "isSecret": false,
+          "name": "DOCMODEL_PROJECT_ID"
+        },
+        {
+          "description": "member (default) or admin",
+          "format": "string",
+          "isRequired": false,
+          "isSecret": false,
+          "name": "DOCMODEL_USER_ROLE"
+        }
+      ],
+      "identifier": "doc-model-safety-gate",
+      "registryType": "npm",
+      "transport": {
+        "type": "stdio"
+      },
+      "version": "0.1.2"
+    }
+  ],
+  "repository": {
+    "source": "github",
+    "url": "https://github.com/laceykes/doc-model-safety-gate"
+  },
+  "title": "DOC Model Safety Gate",
+  "version": "0.1.2"
+}

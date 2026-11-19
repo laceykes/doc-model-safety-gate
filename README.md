@@ -2,13 +2,13 @@
 
 **An AI can draft the change. It cannot publish it.**
 
-![The Safety Gate loop: an agent proposes a change, the gate holds it, a human reviews it, and only then does it publish](docs/demo-motion-v2.gif)
+![The Safety Gate loop: an agent proposes a change, the gate holds it, a human reviews it, and only then does it publish](https://raw.githubusercontent.com/laceykes/doc-model-safety-gate/main/docs/demo-motion-v2.gif)
 
 The DOC Model builds software in three layers — **D**ata, **O**perations, **C**omponents. This MCP server enforces the DOC rule for AI agents working in the Operations layer: an agent can propose changes to your content, but every proposal is staged for human review, and only reviewed work can go live.
 
 AI agents can write to your CMS the moment you connect them to it. This server puts a gate in between: everything an agent produces is staged for review, a human decides, and only reviewed work can go live. If an output is still pending, the publish call itself is refused — the gate is enforced by the backend, not by a warning label.
 
-![How the Safety Gate works: AI agent, Safety Gate, human review, published site — plus undo and a record of every decision](docs/how-it-works.png)
+![How the Safety Gate works: AI agent, Safety Gate, human review, published site — plus undo and a record of every decision](https://raw.githubusercontent.com/laceykes/doc-model-safety-gate/main/docs/how-it-works.png)
 
 ## The rule
 
