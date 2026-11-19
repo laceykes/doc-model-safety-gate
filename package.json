@@ -1,0 +1,35 @@
+{
+  "name": "doc-model-safety-gate",
+  "version": "0.1.0",
+  "description": "The DOC Model Safety Gate as an MCP server: AI agents propose content changes, humans review them, and only reviewed work can publish.",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "doc-model-safety-gate": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "safety-gate",
+    "human-in-the-loop",
+    "ai-agents",
+    "content-operations",
+    "doc-model"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.1"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3",
+    "vitest": "^4.0.18"
+  }
+}
